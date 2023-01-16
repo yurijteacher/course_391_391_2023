@@ -67,18 +67,13 @@ public class UserController {
                                HttpServletRequest request){
 
         HttpSession session = request.getSession();
-
         Cart cart = (Cart) session.getAttribute("cart");
-
         if(cart == null) return "redirect:/";
-
-
 
         Users user  = (Users) session.getAttribute("user");
         if (user ==null) return "redirect:/login";
 
         Clients client = userService.getClientByUser(user);
-
         List<Address> address = addressService.getListAddress(client);
 
         model.addAttribute("itemsCart", cart.getCart());
@@ -92,8 +87,8 @@ public class UserController {
 
     @PostMapping("/buy")
     public String getPageThank(HttpServletRequest request,
-                               @RequestParam(name = "delivery1") String delivery,
-                               @RequestParam(name = "payment1") String payment){
+                               @RequestParam(name = "delivery") String delivery1,
+                               @RequestParam(name = "payment") String payment1){
 
         HttpSession session = request.getSession();
 
@@ -107,8 +102,8 @@ public class UserController {
         order.setStatus(false);
         order.setDate_created(new Date());
         order.setClientes(client);
-        order.setPayment(payment);
-        order.setDelivery(delivery);
+        order.setPayment(payment1);
+        order.setDelivery(delivery1);
 
         Order order1 = orderService.saveOrderToDB(order);
 

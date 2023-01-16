@@ -42,16 +42,17 @@
     <p> address: ${address.country} , ${address.city}, ${address.building}</p>
 
 
+    <form action="/buy" method="post">
     <h2>Payment</h2>
     <p>asd sad</p>
-    <select name="payment1">
+    <select name="payment" id="payment">
         <option value="cash" selected>Оплата готівкою</option>
         <option value="card">Оплата картою</option>
     </select>
 
 
     <h2>Delivery</h2>
-    <select name="delivery1">
+    <select name="delivery" id="delivery">
         <option value="q1" selected>Самовивіз</option>
         <option value="q2">Нова пошта</option>
         <option value="q3">Пошта України</option>
@@ -60,7 +61,7 @@
 
     <p>ds sda</p>
 
-    <form action="/buy" method="post">
+
         <input type="submit" value="buy">
     </form>
 
