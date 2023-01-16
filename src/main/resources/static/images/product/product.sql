@@ -1,0 +1,8 @@
+INSERT INTO `shop_course_2023_391_392`.`product` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('qwe1 qwe qwe qwe', '/static/images/category/car.jpg', 'BMW-5', '1100', '1');
+INSERT INTO `shop_course_2023_391_392`.`product` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('qwe2 qwe qwe qwe', '/static/images/category/car.jpg', 'BMW-1', '1200', '1');
+INSERT INTO `shop_course_2023_391_392`.`product` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('qwe3 qwe qwe qwe', '/static/images/category/car.jpg', 'BMW-2', '1300', '1');
+INSERT INTO `shop_course_2023_391_392`.`product` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('qwe4 qwe qwe qwe', '/static/images/category/car.jpg', 'BMW-3', '1400', '1');
+INSERT INTO `shop_course_2023_391_392`.`product` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('qwe5 qwe qwe qwe', '/static/images/category/car.jpg', 'BMW-4', '1500', '1');
+INSERT INTO `shop_course_2023_391_392`.`product` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('qwe6 qwe qwe qwe', '/static/images/category/car.jpg', 'BMW-22', '1600', '1');
+INSERT INTO `shop_course_2023_391_392`.`product` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('qwe7 qwe qwe qwe', '/static/images/category/car.jpg', 'BMW-33', '1700', '1');
+INSERT INTO `shop_course_2023_391_392`.`product` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('qwe8 qwe qwe qwe', '/static/images/category/car.jpg', 'BMW-44', '1800', '1');
