@@ -7,6 +7,7 @@
         <thead>
         <tr>
             <#--            <th>id</th>-->
+            <th>image</th>
             <th>name</th>
             <th>description</th>
             <th>price</th>
@@ -23,6 +24,8 @@
 
             <form method="post" action="/updateProductFromCart">
                 <tr>
+                    <td><img src="${item.product.image}" alt="${item.product.name}" style="width:28px;height:28px;"></td>
+
                     <input type="hidden" name="id" value="${item.product.id}">
 
                     <td>${item.product.name}</td>

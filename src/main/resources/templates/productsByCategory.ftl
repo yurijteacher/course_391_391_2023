@@ -9,7 +9,7 @@
                 <form action="/addNewProductToCart" method="post">
                     <input type="hidden" name="id" value="${product.id}">
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="${product.image}" class="card-img-top" alt="${product.name}">
                             <div class="card-body">
                                 <h5 class="card-title">${product.name}</h5>
@@ -17,7 +17,7 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <input type="text" name="quantity" value="1">
+                                    <input type="text" name="quantity" value="1" size="3">
                                 </li>
                                 <li class="list-group-item">
                                     <p class="card-text">${product.price}</p>
