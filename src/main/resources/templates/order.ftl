@@ -46,6 +46,7 @@
 
 
     <form action="/buy" method="post">
+
         <h2>Payment</h2>
         <p>asd sad</p>
         <select name="payment" id="payment">

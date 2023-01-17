@@ -34,7 +34,7 @@
 
                     <td>${item.product.price}</td>
 
-                    <td><input type="text" name="quantity" value="${item.quantity}"></td>
+                    <td><input type="text" name="quantity" value="${item.quantity}" size="5"></td>
 
                     <td> ${item.quantity * item.product.price}</td>
 

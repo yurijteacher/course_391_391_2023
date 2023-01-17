@@ -51,12 +51,12 @@ public class UserController {
         if(userService.getLogicByUser(username,password)){
             HttpSession session = request.getSession();
             Users  user = userService.getUserByUsernameAndPass(username,password);
-            session.setAttribute("user", user);
 
+            session.setAttribute("user", user);
 
          return "redirect:/order";
         } else {
-         return "redirect:/registration";
+            return "redirect:/registration";
         }
     }
 
@@ -105,14 +105,13 @@ public class UserController {
         order.setPayment(payment1);
         order.setDelivery(delivery1);
 
-        Order order1 = orderService.saveOrderToDB(order);
+        Order order1 = orderService.saveOrderToDB(order); // +id
 
         Cart cart = (Cart) session.getAttribute("cart");
 
         for (ItemCart el : cart.getCart()) {
             productHasOrderRepository.save(new ProductHasOrder(el.getProduct(), el.getQuantity(), order1));
         }
-
 
 
         return "redirect:/thank";

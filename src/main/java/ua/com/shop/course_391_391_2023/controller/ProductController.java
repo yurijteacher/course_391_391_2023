@@ -27,7 +27,7 @@ public class ProductController {
     }
 
     @GetMapping("/category/{id}")
-    public String getPagesProductsFromCategory(@PathVariable("id") Category category, Model model) {
+    public String getPagesProductsFromCategory( @PathVariable("id")Category category, Model model) {
 
         List<Product> products = new ArrayList<>();
         products = productsService.getProductsFromCategory(category);
@@ -93,6 +93,7 @@ public class ProductController {
         }
 
         cart.updateItemCart(product, quantity);
+
         session.setAttribute("cart", cart);
 
         return "redirect:/cart";

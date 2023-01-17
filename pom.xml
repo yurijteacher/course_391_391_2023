@@ -8,8 +8,8 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.0.1</version>
         <relativePath/> <!-- lookup parent from repository -->
-    </parent>
 
+    </parent>
     <groupId>ua.com.shop</groupId>
     <artifactId>course_391_391_2023</artifactId>
     <version>0.0.1-SNAPSHOT</version>

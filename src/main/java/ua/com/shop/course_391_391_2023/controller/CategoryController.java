@@ -48,4 +48,15 @@ public class CategoryController {
     }
 
 
+    @GetMapping("/test")
+    public String getTestPage(Model model){
+
+        String name = "asdsad";
+
+        model.addAttribute("test", name);
+
+
+        return "test";
+    }
+
 }
